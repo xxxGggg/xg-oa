@@ -191,6 +191,7 @@ public class OaProcessServiceImpl extends ServiceImpl<OaProcessMapper, Process> 
         }
         IPage<ProcessVo> page = new Page<ProcessVo>(pageParam.getCurrent(), pageParam.getSize(), totalCount);
         page.setRecords(processList);
+
         return page;
 
     }
